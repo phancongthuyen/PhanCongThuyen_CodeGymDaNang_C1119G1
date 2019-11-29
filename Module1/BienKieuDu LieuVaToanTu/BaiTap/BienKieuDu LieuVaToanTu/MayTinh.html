@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MayTinh</title>
+</head>
+<body>
+<input placeholder="Number1" type = "text" id = "num1">
+<input placeholder="Number2" type = "text" id = "num2">
+<button onclick = f('+')>+</button>
+<button onclick = f('-')>-</button>
+<button onclick = f('*')>*</button>
+<button onclick = f('/')>/</button>
+<p id = "a"></p>
+
+<script>
+    var x = document.getElementById("num1");
+    var y = document.getElementById("num2");
+    function f(t) {
+
+            document.getElementById("a").innerText=eval(x.value + t + y.value);
+
+    }
+</script>
+</body>
+</html>
