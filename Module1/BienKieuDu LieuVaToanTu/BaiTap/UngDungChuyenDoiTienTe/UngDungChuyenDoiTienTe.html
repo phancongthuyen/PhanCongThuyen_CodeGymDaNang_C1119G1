@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UngDungChuyenDoiTienTe</title>
+</head>
+<body>
+Number: <input id="number">
+From:
+<select id="from">
+    <option value="1">USD</option>
+    <option value="2">VND</option>
+</select>
+To:
+<select id="to">
+    <option value="1">USD</option>
+    <option value="2">VND</option>
+</select>
+<input type="button" value="Convert" onclick="convert()">
+<p id="result"></p>
+<!-- <button onclick="convert()">Convert</button> -->
+<script>
+    function convert() {
+        var result = document.getElementById("result");
+        var number = document.getElementById("number");
+        var from = document.getElementById("from").value;
+        var to = document.getElementById("to").value;
+        if (from == "1" && to == "2") {
+            result.innerHTML = parseInt(number.value) * 23000 + " VND";
+        } else if (from == "2" && to == "1") {
+            result.innerHTML = parseInt(number.value) / 23000 + " USD";
+        }
+    }
+</script>
+</body>
+</html>

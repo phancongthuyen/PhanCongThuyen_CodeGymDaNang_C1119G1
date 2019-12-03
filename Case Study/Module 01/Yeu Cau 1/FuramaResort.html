@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furama Resort</title>
+</head>
+<body>
+<script>
+    var name = prompt ("Enter Your Name");
+    var idNumber = prompt ("Enter Your ID Number");
+    var birthday = prompt("Enter Your Birthday");
+    var email = prompt("Enter Your Email");
+    var address = prompt("Enter Your Address");
+    var typeOfCustomer = prompt("Enter Type of Customer: " + "\n Diamond" + "\n Platinum" + "\n Gold" + "\n Silver" + "\n Member");
+    var discount = prompt("Enter Discount Code");
+    var accompanyingPeople = prompt("Enter Number of Accompanying People");
+    var dayRental = prompt("Enter Days of Rental");
+    var typeOfService = prompt("Enter Type of Service: " + "\n 1. Villa" + "\n 2. House" + "\n 3. Room");
+    var typeOfRoom = prompt("Enter Type of Room: " + "\n Vip" + "\n Business" + "\n Normal")
+    var money;
+    if (typeOfService === "1")
+        money = 500 * dayRental * (1 - discount/100);
+    else if(typeOfService === "2")
+    money = 300 * dayRental * (1- discount/100);
+    else
+        money = 100 * dayRental * (1 - discount/100);
+    alert("name: " + name + "\n idNumber: " + idNumber + "\n birthday: " + birthday + "\n idNumber: " + idNumber + "\n email: " + email +
+        "\n address: " + address + "\n typeOfCustomer: " + typeOfCustomer+ "\n discount: " + discount + "\n accompanyingPeople: " + accompanyingPeople +
+        "\n dayRental: " + dayRental + "\n typeOfService: " + typeOfService + "\n typeOfRoom: " + typeOfRoom + "\n money: " + money)
+</script>
+</body>
+</html>

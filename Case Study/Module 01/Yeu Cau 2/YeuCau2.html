@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = "Phan Cong Thuyen";
+    let email = "abc@gmail.com";
+    let idNumber = "123456789";
+    let birthday = "01/01/1991"
+    let address = "Quảng Nam";
+    let typeOfCustomer = "Diamond";
+    let discount = 10;
+    let accompanyingPeople = 2;
+    let typeOfService = "Villa";
+    let typeOfRoom = "Vip";
+    let dayRental = 2;
+    let money = 0;
+    let num = prompt("1: Show infomation :" + "\n2: Edit infomation" + "\n3: Show the amount to be paid afer discount");
+    switch (num) {
+        case "1":
+            alert("Name: " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+            );
+            break;
+        case "2":
+            let edit = prompt("1.Name " + name + "\n2.ID : " + idNumber + "\n3.Day Of Birth : " + birthday + "\n4.Email: " + email +
+                "\n5.Address : " + address + "\n6.Type of Member : " + typeOfCustomer + "\n7.Discount : " + discount + "\n8.Amout of People : " + accompanyingPeople
+                + "\nRent Day : " + dayRental + "\n10.Type of Service : " + typeOfService + "\n11.Type of Room : " + typeOfRoom + "\n12.Money : " + money
+            );
+            switch (edit) {
+                case "1":
+                    let editted1 = prompt("Update name:");
+                    name = editted1;
+                    alert("Name: " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "2":
+                    let editted2 = prompt("Update ID: ");
+                    idNumber = editted2;
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "3":
+                    let editted3 = prompt("Update Birthday: ");
+                    birthday = editted3;
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "4":
+                    let editted4 = prompt("Update email: ");
+                    email = editted4
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "5":
+                    let editted5 = prompt("Update Address:");
+                    address = editted5
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "6":
+                    let editted6 = prompt("Update Type of Customer: ");
+                    typeOfCustomer = editted6
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "7":
+                    let editted7 = prompt("Update Discount:");
+                    discount = editted7
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "8":
+                    let editted8 = prompt("Update Amount of People");
+                    accompanyingPeople = editted8
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "9":
+                    let editted9 = prompt("Update Ren Day");
+                    dayRental = editted9
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "10":
+                    let editted10 = prompt("Update Type of Service");
+                    typeOfService = editted10
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+                case "11":
+                    let editted11 = prompt("Update Type of Room");
+                    typeOfRoom = editted11
+                    alert("Name " + name + "\nID : " + idNumber + "\nDay Of Birth : " + birthday + "\nEmail: " + email +
+                        "\nAddress : " + address + "\nType of Member : " + typeOfCustomer + "\nDiscount : " + discount + "\nAmout of People : " + accompanyingPeople
+                        + "\nRent Day : " + dayRental + "\nType of Service : " + typeOfService + "\nType of Room : " + typeOfRoom + "\nMoney : " + money
+                    );
+                    break;
+            }
+        default:
+            alert("Failed")
+    }
+
+</script>
+</body>
+</html>
